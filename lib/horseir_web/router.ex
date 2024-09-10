@@ -18,6 +18,8 @@ defmodule HorseirWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    live "/tournaments", TournamentLive
   end
 
   # Other scopes may use custom stacks.
